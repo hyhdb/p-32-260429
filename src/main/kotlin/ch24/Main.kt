@@ -4,6 +4,10 @@ class Person(
     var name: String = "",
     var age: Int = 0
 ) {
+
+    fun addAge() {
+        age += 1
+    }
     fun printInfo() {
         println("Name: $name, Age: $age")
     }
@@ -20,6 +24,7 @@ fun main() {
     val person2 = Person().apply {
         name = "Alice"
         age = 25
+        addAge()
         10
     }
 
