@@ -1,17 +1,7 @@
-package ch12
+package com.back.ch12
 
-class Person(val name:String, val age:Int) {
 
-    override fun equals(other: Any?): Boolean {
-        if (this === other) return true
-        if (other !is Person) return false
-
-        return name == other.name && age == other.age
-    }
-
-    override fun toString(): String {
-        return "Person(name='$name', age=$age)"
-    }
+data class Person(val name:String, val age:Int) {
 }
 
 fun main() {
