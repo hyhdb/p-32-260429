@@ -1,5 +1,5 @@
 package ch38
-`
+
 class Person(
     private var _name: String
 ) {
